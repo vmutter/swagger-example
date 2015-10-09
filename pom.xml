@@ -14,6 +14,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jetty.version>9.2.3.v20140905</jetty.version>
 		<jersey.version>2.22</jersey.version>
+		<swagger.version>1.5.3</swagger.version>
+		<slf4j-version>1.7.12</slf4j-version>
 	</properties>
 
 	<dependencies>
@@ -29,22 +31,23 @@
 			<version>${jetty.version}</version>
 		</dependency>
 
+		<!-- Swagger -->
 		<dependency>
-			<groupId>org.glassfish.jersey.core</groupId>
-			<artifactId>jersey-server</artifactId>
-			<version>${jersey.version}</version>
+			<groupId>io.swagger</groupId>
+			<artifactId>swagger-jersey2-jaxrs</artifactId>
+			<version>${swagger.version}</version>
 		</dependency>
 
+		<!-- SLF4J -->
 		<dependency>
-			<groupId>org.glassfish.jersey.containers</groupId>
-			<artifactId>jersey-container-jetty-servlet</artifactId>
-			<version>${jersey.version}</version>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j-version}</version>
 		</dependency>
-
 		<dependency>
-			<groupId>org.glassfish.jersey.media</groupId>
-			<artifactId>jersey-media-json-jackson</artifactId>
-			<version>${jersey.version}</version>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${slf4j-version}</version>
 		</dependency>
 	</dependencies>
 
